@@ -13,10 +13,10 @@ const Navbar = () => {
         <img ClassName="mx-2 w-10" src={logo} alt="logo" />
       </div>
       <div className="m-10 flex items-center justify-center gap-3 text-2xl">
-        <FaLinkedin />
-        <FaGithub />
-        <FaSquareXTwitter />
-        <FaInstagram />
+        <FaLinkedin className="text-gray-500 hover:text-blue-700 transform hover:scale-110 transition duration-300"/>
+        <FaGithub className="text-gray-500 hover:text-white transform hover:scale-110 transition duration-300" />
+        <FaSquareXTwitter className="text-gray-500 hover:text-red-600 transform hover:scale-110 transition duration-300" />
+        <FaInstagram className="text-gray-500 hover:text-pink-600 transform hover:scale-110 transition duration-300"/>
       </div>
     </nav>
   );
