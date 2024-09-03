@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
@@ -5,17 +6,27 @@ import Technologies from "./components/Technologies";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
+import "./index.css"; // Ensure this line is present to import your CSS file
+
 export const App = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
+
   return (
     <div
-      className="overflow-x-hidden text-neutral-300 antialiased
-    selection:bg-cyan-300 selection:text-cyan-900"
+      className={`overflow-x-hidden antialiased selection:bg-cyan-300 selection:text-cyan-900
+        ${darkMode ? "bg-gradient-radial-dark" : "bg-gradient-radial-light"} 
+        absolute inset-0 -z-10 h-full w-full`}
     >
-      <div className="fixed top-0 -z-10 h-full w-full">
-        <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
-      </div>
       <div className="container mx-auto px-8">
-        <Navbar />
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Hero />
         <About />
         <Technologies />

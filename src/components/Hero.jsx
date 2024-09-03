@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/photo2.png";
+import profilePic from "../assets/photo3.png";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
@@ -13,7 +13,7 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+    <div className="border-b border-neutral-900 pb-4 lg:mb-35 dark:border-neutral-700">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
@@ -21,7 +21,7 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
+              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl text-black dark:text-white"
             >
               Hemanth M Prabhu
             </motion.h1>
@@ -31,13 +31,13 @@ const Hero = () => {
               animate="visible"
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
             >
-              Full Stack Developerr
+              Tech Enthusiast, Musician, Coder.
             </motion.span>
             <motion.p
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tight"
+              className="my-2 max-w-xl py-6 font-light tracking-tight text-black dark:text-white"
             >
               {HERO_CONTENT}
             </motion.p>

@@ -3,12 +3,14 @@ import { CONTACT } from "../constants";
 const Contacts = () => {
   return (
     <div className="border-b border-neutral-900 pb-20">
-      <h1 className="my-10 text-center text-4xl">Get in Touch</h1>
+      <h1 className="my-10 text-center text-4xl dark:text-white">
+        Get in Touch
+      </h1>
       <div className="text-center tracking-tighter">
-        <p className="my-4">{CONTACT.address}</p>
+        <p className="my-4 dark:text-white">{CONTACT.address}</p>
 
-        <p className="my-4">{CONTACT.phoneNo}</p>
-        <a href="#" className="border-b">
+        <p className="my-4 dark:text-white">{CONTACT.phoneNo}</p>
+        <a href="#" className="border-b dark:text-white">
           {CONTACT.email}
         </a>
       </div>

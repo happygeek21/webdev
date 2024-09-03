@@ -2,7 +2,7 @@ import { PROJECTS } from "../constants";
 
 function Projects() {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className="border-b border-neutral-900 pb-4 dark:text-white">
       <h1 className="my-20 text-center text-4xl">Projects</h1>
       <div>
         {PROJECTS.map((project, index) => (
