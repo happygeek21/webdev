@@ -12,6 +12,19 @@ export const App = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
+    const userPrefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    const currentHour = new Date().getHours();
+
+    if (userPrefersDark || currentHour >= 18 || currentHour < 6) {
+      setDarkMode(true);
+    } else {
+      setDarkMode(false);
+    }
+  }, []);
+
+  useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
     } else {

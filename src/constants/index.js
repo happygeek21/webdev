@@ -11,9 +11,9 @@ export const ABOUT_TEXT = `I am a passionate Linux enthusiast with a strong foun
 export const EXPERIENCES = [
   {
     year: "Present[2024]",
-    role: "Senior Full Stack Developer",
+    role: "Full Stack Developer/Programmer",
     company: "Freelance",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
+    description: `Developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
     technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
   },
   
@@ -21,8 +21,8 @@ export const EXPERIENCES = [
     year: "2021 - 2024",
     role: "Student",
     company: "Chinmaya College of Arts, Commerce and Science",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    description: `Understanding the concepts and basics.`,
+    technologies: ["HTML", "CSS", "Javascript","PHP", "mySQL","Vim","C/C++"],
   },
   
   /*
@@ -62,7 +62,7 @@ export const PROJECTS = [
     image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "Tailwind CSS", "React","Vite","Git","JS"],
+    technologies: ["HTML", "Tailwind CSS", "React","Vite","Framer-Motion","JS"],
   },
   /*
   {

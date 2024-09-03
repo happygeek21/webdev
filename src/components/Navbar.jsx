@@ -14,7 +14,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <nav className="mb-20 flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center">
-        <img className="mx-2 w-10" src={logo} alt="logo" />
+        <h1 className="text-base font-semibold dark:text-white">hemanth.dev</h1>
       </div>
       <div className="m-10 flex items-center justify-center gap-3 text-2xl">
         <a
@@ -29,7 +29,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub className="text-gray-500 hover:text-white transform hover:scale-110 transition duration-300" />
+          <FaGithub className="text-gray-500 hover:text-orange-500 transform hover:scale-110 transition duration-300" />
         </a>
         <a
           href="https://www.twitter.com"
@@ -55,7 +55,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         {/* Dark Mode Toggle */}
         <button
           onClick={() => setDarkMode(!darkMode)}
-          className="flex items-center p-2 rounded-md space-x-2 ml-4"
+          className="flex items-center p-2 rounded-md  ml-4"
         >
           {darkMode ? (
             <FaSun className="text-yellow-500 transform hover:scale-110 transition duration-300" />
